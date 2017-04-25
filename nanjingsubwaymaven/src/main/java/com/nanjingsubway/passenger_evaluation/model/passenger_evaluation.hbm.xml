@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN" 
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+<hibernate-mapping>
+	<class name="com.nanjingsubway.passenger_evaluation.model.PassengerEvalutaion" table="passenger_evalutaion">
+		<id name="id" type="java.lang.Integer" length="11">
+			<column name="id"></column>
+			<generator class="increment"></generator>
+		</id>
+		<property name="passengerId" type="java.lang.Integer" length="11">
+			<column name="passenger_id"></column>
+		</property>
+		<property name="buyTicketId" type="java.lang.String" length="255">
+			<column name="buy_ticket_id"></column>
+		</property>
+		<property name="evaluationStars" type="java.lang.String" length="255">
+			<column name="evaluation_stars"></column>
+		</property>
+		<property name="evaluationContent" type="java.lang.String" length="255">
+			<column name="evaluation_content"></column>
+		</property>
+	</class>
+</hibernate-mapping>
